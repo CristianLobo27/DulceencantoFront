@@ -1,0 +1,69 @@
+<h1 class="titulo">DULCE ENCANTO DEL VALLE</h1>
+<div class="container">
+
+   <div  class="carousel-container">
+    <a >
+    <img *ngFor="let almendrito of almendro, let i= index" 
+    [src]="almendrito.imagen"
+    [ngClass]="{'image-active': selectedIndexAlmendro === i}"
+    class="fade"
+    routerLink="/dulceencanto/almendro"
+    >
+
+    <div *ngIf="indicators" class="carousel-dot-container">
+        <span *ngFor="let dot of almendro; let i=index" 
+        class="dot"
+        [ngClass]="{'active': selectedIndexAlmendro === i}"
+        (click)="selectImageAlmendro(i)"
+        >
+        </span>
+    </div>
+
+    <button *ngIf="controls" class="btn-carousel btn-prev">
+        <i class="fas fa-arrow-circle-left icon-carousel icon-prev"
+        (click)="onPrevClickAlmendro()">
+            h
+        </i>
+    </button>
+
+    <button *ngIf="controls" class="btn-carousel btn-next">
+        <i class="fas fa-arrow-circle-right icon-carousel icon-next"
+        (click)="onNextClickAlmendro()">
+            h
+        </i>
+    </button>
+</a>
+</div>
+
+
+<div  class="carousel-container">
+    <img *ngFor="let nogalcito of nogal, let i= index" 
+    [src]="nogalcito.imagen"
+    [ngClass]="{'image-active': selectedIndexNogal === i}"
+    class="fade"
+    >
+
+    <div *ngIf="indicators" class="carousel-dot-container">
+        <span *ngFor="let dot of nogal; let i=index" 
+        class="dot"
+        [ngClass]="{'active': selectedIndexNogal === i}"
+        (click)="selectImageNogal(i)"
+        >
+        </span>
+    </div>
+
+    <button *ngIf="controls" class="btn-carousel btn-prev">
+        <i class="fas fa-arrow-circle-left icon-carousel icon-prev"
+        (click)="onPrevClickNogal()">
+            h
+        </i>
+    </button>
+
+    <button *ngIf="controls" class="btn-carousel btn-next">
+        <i class="fas fa-arrow-circle-right icon-carousel icon-next"
+        (click)="onNextClickNogal()">
+            h
+        </i>
+    </button>
+</div>
+</div>

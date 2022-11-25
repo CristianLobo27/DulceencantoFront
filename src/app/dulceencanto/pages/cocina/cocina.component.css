@@ -1,0 +1,25 @@
+.container{
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  background: transparent;
+  gap: 80px;
+  flex-wrap: wrap;
+
+
+}
+
+.container::after {
+  position: absolute;
+  z-index: -1;
+  background-color: pink;
+  opacity: 0.6;
+
+}
+
+
+
+
+
+ 

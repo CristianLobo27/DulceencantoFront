@@ -1,0 +1,21 @@
+<div class="container">
+    <div *ngFor="let cocinilla of actividades">
+      <mat-card  class = "example-card"> 
+          <mat-card-header> 
+            <div  mat-card-avatar  class = "example-header-image"></div> 
+            <mat-card-title> {{cocinilla.tipo}} </mat-card-title > 
+            <mat-card-subtitle> {{cocinilla.descripcion}} </mat-card-subtitle > 
+          </mat-card-header> 
+          <img mat-card-image [src]="cocinilla.imagen" alternativo= "Foto de un Shiba Inu"> 
+          <mat-card-content> 
+            <p>
+              {{cocinilla.descripcion}}
+              {{cocinilla.tipo}}
+            </p> 
+          </mat-card-content> 
+          <mat-card-actions > 
+            <button mat-button (click)="openDialog(cocinilla)">Abrir cuadro de diálogo</button>
+          </mat-card-actions> 
+        </mat-card >
+      </div>
+</div>
