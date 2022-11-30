@@ -25,4 +25,6 @@ export class NogalComponent implements OnInit {
     
   }
 
+
+
 }

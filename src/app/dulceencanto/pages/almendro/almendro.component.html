@@ -1,8 +1,9 @@
-<p>almendro works!</p>
-<mat-tab-group mat-stretch-tabs class="example-stretched-tabs mat-elevation-z4">
-    <mat-tab label="First"> Content 1 </mat-tab>
-    <mat-tab label="Second"> Content 2 </mat-tab>
-    <mat-tab label="Third"> Content 3 </mat-tab>
-  </mat-tab-group>
-  
-  
+<div class="hijo">
+  <mat-form-field class="ejemplo-ancho-completo" apariencia="rellenar"> 
+  <mat-label> Elija una fecha </mat-label > 
+  <input  matInput [ matDatepickerFilter ]= "myFilter" [matDatepicker]= " selector" > 
+  <mat-hint> MM/DD/AAAA </mat-hint > 
+  <mat-datepicker-toggle  matSuffix [for]="picker"></mat-datepicker-alternar> 
+  <mat-datepicker #selector> </mat-datepicker > 
+</mat-form-field>
+</div>

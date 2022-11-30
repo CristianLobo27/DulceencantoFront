@@ -15,6 +15,7 @@ export class CocinaComponent implements OnInit {
 
   public cocinas: Cocina[] = [];
   public cocina!: Cocina;
+ 
 
   constructor(private cocinaService: CocinaService, public dialog: MatDialog) { }
 

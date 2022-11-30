@@ -10,6 +10,7 @@ import { AlmendroService } from '../../../services/AlmendroService/almendro.serv
 export class AlmendroComponent implements OnInit {
 
   public almendro: Almendro[] = [];
+  public selected!: Date;
 
   constructor(private almendroService: AlmendroService) { }
 

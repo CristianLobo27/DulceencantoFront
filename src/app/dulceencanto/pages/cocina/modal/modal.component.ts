@@ -1,9 +1,9 @@
-import { Component, Inject, Input, OnInit } from '@angular/core';
+import { Component, Inject, OnInit } from '@angular/core';
 import { MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { Cocina } from '../../../../models/cocina';
 
 @Component({
-  selector: 'app-modal',
+  selector: 'app-culo',
   templateUrl: './modal.component.html',
   styleUrls: ['./modal.component.css']
 })

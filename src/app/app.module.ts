@@ -11,6 +11,11 @@ import { ComunesModule } from './dulceencanto/comunes/comunes.module';
 import {MatTabsModule} from '@angular/material/tabs';
 import {MatMenuModule} from '@angular/material/menu';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations'
+import { MaterialModule } from './material/material.module';
+import {MatDialogModule} from '@angular/material/dialog';
+
+
+
 
 
 
@@ -28,7 +33,9 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations'
     ComunesModule,
     MatTabsModule,
     MatMenuModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MaterialModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]

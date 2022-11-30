@@ -12,6 +12,7 @@ import { ModalComponent } from './pages/cocina/modal/modal.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { ApartamentosComponent } from './pages/apartamentos/apartamentos.component'
 import { ComunesModule } from './comunes/comunes.module';
+import {MatDialogModule} from '@angular/material/dialog';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import { ComunesModule } from './comunes/comunes.module';
     DulceencantoRoutingModule,
     MaterialModule,
     MatCardModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    MatDialogModule
     //BrowserAnimationsModule
 
   ]

@@ -1,6 +1,7 @@
+<div class="padre">
 <div class="container">
-    <div *ngFor="let cocinilla of cocinas" class="cards">
-      <mat-card > 
+    <div *ngFor="let cocinilla of cocinas">
+      <mat-card class="cards"> 
           <mat-card-header> 
             <div  mat-card-avatar  class = "example-header-image"></div> 
             <mat-card-title> {{cocinilla.tipo}} </mat-card-title > 
@@ -20,3 +21,6 @@
         </mat-card >
       </div>
 </div>
+</div>
+
+

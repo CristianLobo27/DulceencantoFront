@@ -1,6 +1,37 @@
-<p>nogal works!</p>
-<button mat-button>Menu</button>
-<mat-menu #menu="matMenu">
-  <button mat-menu-item>Item 1</button>
-  <button mat-menu-item>Item 2</button>
-</mat-menu>
+
+<!--Cards-->
+<section>
+<div class="swiper mySwiper container">
+  <div  class="swiper-wrapper content">
+    <div class="swiper-slide cards">
+    <mat-card> 
+        <mat-card-header> 
+          <div  mat-card-avatar  class = "example-header-image"></div> 
+          <mat-card-title> cocina </mat-card-title > 
+          <mat-card-subtitle> cocina </mat-card-subtitle > 
+        </mat-card-header> 
+        <img mat-card-image  alternativo= "Foto de un Shiba Inu"> 
+        <mat-card-content> 
+          <p>
+            cocina
+           
+          </p> 
+        </mat-card-content> 
+       <!-- <mat-card-actions > 
+          <button mat-button (click)="openDialog(cocinilla)">Ver Detalles</button>
+        </mat-card-actions> -->
+      </mat-card >
+    </div>
+  </div>
+</div>
+
+<div class="swiper-button-next"></div>
+<div class="swiper-button-prev"></div>
+<div class="swiper-pagination"></div>
+</section>
+
+<!-- Swiper JS -->
+
+
+<!-- Initialize Swiper -->
+
