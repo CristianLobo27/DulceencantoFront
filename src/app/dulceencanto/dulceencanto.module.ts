@@ -13,6 +13,11 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { ApartamentosComponent } from './pages/apartamentos/apartamentos.component'
 import { ComunesModule } from './comunes/comunes.module';
 import {MatDialogModule} from '@angular/material/dialog';
+import {MatInputModule} from '@angular/material/input';
+import {MatNativeDateModule} from '@angular/material/core';
+import { ModalActividadesComponent } from './pages/actividades/modal-actividades/modal-actividades.component';
+import { ModalNogalComponent } from './pages/nogal/modal-nogal/modal-nogal.component';
+import { ModalAlmendroComponent } from './pages/almendro/modal-almendro/modal-almendro.component';
 
 
 @NgModule({
@@ -22,7 +27,10 @@ import {MatDialogModule} from '@angular/material/dialog';
     ActividadesComponent,
     AlmendroComponent,
     ModalComponent,
-    ApartamentosComponent
+    ModalActividadesComponent,
+    ModalNogalComponent,
+    ModalAlmendroComponent,
+
   ],
   imports: [
     CommonModule,
@@ -30,7 +38,9 @@ import {MatDialogModule} from '@angular/material/dialog';
     MaterialModule,
     MatCardModule,
     FlexLayoutModule,
-    MatDialogModule
+    MatDialogModule,
+    MatInputModule,
+    MatNativeDateModule
     //BrowserAnimationsModule
 
   ]

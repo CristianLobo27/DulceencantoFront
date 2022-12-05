@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ActividadesService } from '../../../services/ActividadesService/actividades.service';
 import { Actividades } from '../../../models/actividades';
-import { ModalComponent } from './modal/modal.component';
 import { MatDialog } from '@angular/material/dialog';
+import { ModalActividadesComponent } from './modal-actividades/modal-actividades.component';
 
 @Component({
   selector: 'app-actividades',
@@ -28,7 +28,7 @@ export class ActividadesComponent implements OnInit {
   }
 
   openDialog(cocina:Actividades) {
-    const dialogRef = this.dialog.open(ModalComponent,{ 
+    const dialogRef = this.dialog.open(ModalActividadesComponent,{ 
       data: {...cocina}
     });
 

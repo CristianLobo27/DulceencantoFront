@@ -13,6 +13,7 @@ import {MatMenuModule} from '@angular/material/menu';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations'
 import { MaterialModule } from './material/material.module';
 import {MatDialogModule} from '@angular/material/dialog';
+import { ApartamentosComponent } from './dulceencanto/pages/apartamentos/apartamentos.component';
 
 
 
@@ -22,8 +23,8 @@ import {MatDialogModule} from '@angular/material/dialog';
 @NgModule({
   declarations: [
     AppComponent,
-    ErrorPageComponent,
-    CabeceraComponent
+    CabeceraComponent,
+    ApartamentosComponent
   ],
   imports: [
     BrowserModule,

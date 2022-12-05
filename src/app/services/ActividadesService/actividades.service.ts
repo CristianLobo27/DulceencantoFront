@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { environment } from '../../../environments/environment';
+import { Actividades } from '../../models/actividades';
 
 @Injectable({
   providedIn: 'root'
@@ -12,11 +13,11 @@ export class ActividadesService {
 
   constructor(private http: HttpClient) { }
 
-  public getActividades(): Observable<any>{
-    return this.http.get<any>(`${this.apiServerUrl}/dulceencanto/actividades`)
+  public getActividades(): Observable<Actividades[]>{
+    return this.http.get<Actividades[]>(`${this.apiServerUrl}/dulceencanto/actividades`)
   }
 
-  public getActividadesById(actividadesId: number): Observable<any>{
-    return this.http.get<any>(`${this.apiServerUrl}/dulceencanto/actividades/${actividadesId}`)
+  public getActividadesById(actividadesId: number): Observable<Actividades>{
+    return this.http.get<Actividades>(`${this.apiServerUrl}/dulceencanto/actividades/${actividadesId}`)
   }
 }

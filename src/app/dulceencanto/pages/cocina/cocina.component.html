@@ -5,22 +5,42 @@
           <mat-card-header> 
             <div  mat-card-avatar  class = "example-header-image"></div> 
             <mat-card-title> {{cocinilla.tipo}} </mat-card-title > 
-            <mat-card-subtitle> {{cocinilla.descripcion}} </mat-card-subtitle > 
+            <mat-card-subtitle> {{cocinilla.gluten}} </mat-card-subtitle > 
           </mat-card-header> 
-          <img mat-card-image [src]="cocinilla.imagen" alternativo= "Foto de un Shiba Inu"> 
-          <mat-card-content> 
-            <p>
-              {{cocinilla.descripcion}}
-              {{cocinilla.reserva}}
-              {{cocinilla.tipo}}
-            </p> 
-          </mat-card-content> 
+          <img mat-card-image [src]="cocinilla.imagen"> 
           <mat-card-actions > 
             <button mat-button (click)="openDialog(cocinilla)">Ver Detalles</button>
+            <button mat-button (click)="pedir(cocinilla)">Pedir</button>
           </mat-card-actions> 
         </mat-card >
       </div>
 </div>
+</div>
+
+<div class="hijo">
+  <div class="container">
+    <mat-form-field>
+      <input matInput [matDatepicker]="myDatePicker" placeholder="Select Date" (dateChange)="addEvent($event)">
+      <mat-datepicker-toggle [for]="myDatePicker" matSuffix></mat-datepicker-toggle>
+      <mat-datepicker #myDatePicker></mat-datepicker>
+    </mat-form-field>
+    <button (click)="getFecha()"></button>
+  </div>
+  <div class="containerLista">
+  <div class="lista">
+    <label *ngFor="let item of historial">
+      {{item}}
+    </label>
+  </div>
+  <div class="listaCant">
+    <label *ngFor="let item of historialC">
+      {{item}}
+    </label>
+  </div>
+</div>
+  <div class="boton">
+    <button (click)="reservar()">Reservar</button>
+  </div>
 </div>
 
 

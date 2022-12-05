@@ -1,23 +1,46 @@
 .padre{
   width: 1100px;
+  float: left;
+  padding: 10px;
 }
 .container{
   margin: 0 auto;
   display: flex;
+  flex-direction: row;
   background: transparent;
   justify-content: center;
   gap: 80px;
   flex-wrap: wrap;
   background-color: #FFFFFF61;
-
+  padding: 10px;
 }
 
+.containerLista{
+  display: flex;
+  flex-direction: row;
+}
+
+.lista{
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+  padding: 10px;
+}
+
+.listaCant{
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  padding: 10px;
+}
 
 .cards{
   width: 380px;
 }
 
-
+.hijo{
+  float: right;
+}
 
 
 

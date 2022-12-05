@@ -1,0 +1,25 @@
+.container{
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    background: transparent;
+    gap: 80px;
+    flex-wrap: wrap;
+    background-color: #FFFFFF61;
+    padding: 10px;
+  }
+
+  .example-card{
+    width: 380px;
+ 
+  }
+
+  .carta{
+    background-color: white;
+    border-radius: 50%;
+  }
+
+  .imagen{
+    height: 300px;
+  }

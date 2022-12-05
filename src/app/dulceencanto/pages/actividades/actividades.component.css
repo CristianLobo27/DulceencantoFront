@@ -12,4 +12,10 @@
 
   .example-card{
     width: 380px;
+ 
+  }
+
+  .carta{
+    background-color: white;
+    border-radius: 50%;
   }
