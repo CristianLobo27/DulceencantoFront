@@ -21,14 +21,14 @@
         <button *ngIf="controls" class="btn-carousel btn-prev">
             <i class="fas fa-arrow-circle-left icon-carousel icon-prev"
             (click)="onPrevClickAlmendro()">
-                h
+                <
             </i>
         </button>
     
         <button *ngIf="controls" class="btn-carousel btn-next">
             <i class="fas fa-arrow-circle-right icon-carousel icon-next"
             (click)="onNextClickAlmendro()">
-                h
+                >
             </i>
         </button>
     </div>
@@ -39,6 +39,7 @@
     [src]="nogalcito.imagen"
     [ngClass]="{'image-active': selectedIndexNogal === i}"
     class="fade"
+    routerLink="/dulceencanto/nogal"
     >
 
     <div *ngIf="indicators" class="carousel-dot-container">
@@ -53,14 +54,14 @@
     <button *ngIf="controls" class="btn-carousel btn-prev">
         <i class="fas fa-arrow-circle-left icon-carousel icon-prev"
         (click)="onPrevClickNogal()">
-            h
+            <
         </i>
     </button>
 
     <button *ngIf="controls" class="btn-carousel btn-next">
         <i class="fas fa-arrow-circle-right icon-carousel icon-next"
         (click)="onNextClickNogal()">
-            h
+            >
         </i>
     </button>
 </div>

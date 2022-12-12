@@ -1,9 +1,13 @@
 .titulo{
     text-align: center;
-    font-size: 50px;
-    margin-top: 70px;
-    margin-bottom: 90px;
-    background-color: #fff;
+    margin-top: 90px;
+    margin-bottom: 120px;
+    font-family: Comic Sans MS; 
+    font-weight:bold; 
+    font-size: 30px; 
+    color: #EBD758; 
+    text-shadow: -1px 0 #414D68, 0 1px #414D68, 1px 0 #414D68, 0 -1px #414D68, -2px 2px 0 #414D68, 2px 2px 0 #414D68, 1px 1px #414D68, 2px 2px #414D68, 3px 3px #414D68, 4px 4px #414D68, 5px 5px #414D68, 6px 6px #414D68, 7px 7px #414D68, 8px 8px #414D68, 9px 9px #414D68;
+    font-size: 80px;
 }
 
 .container{
@@ -21,7 +25,8 @@
     position: relative;
     margin: auto;
     text-align: center;
-    width: 700px;
+    width: 680px;
+    height: 420px;
     border-radius: 15px;
     box-shadow: 0 8px 16px white;
 }
@@ -34,7 +39,7 @@
 .carousel-container img.image-active{
     display: block;
     width: 100%;
-    height: 400px;
+    height: 420px;
 }
 
 .carousel-dot-container{

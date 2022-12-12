@@ -8,6 +8,7 @@
     flex-wrap: wrap;
     background-color: #FFFFFF61;
     padding: 10px;
+    margin-bottom: 40px;
   }
 
   .example-card{
@@ -22,4 +23,15 @@
 
   .imagen{
     height: 300px;
+  }
+
+  .botonCard{
+    background-color: darkolivegreen; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 28px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
   }

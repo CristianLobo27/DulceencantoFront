@@ -3,12 +3,12 @@
     <mat-card class="example-card"> 
         <mat-card-header> 
           <div mat-card-avatar class="example-header-image"></div> 
-          <mat-card-title> {{nogalcillo.tipo}} </mat-card-title > 
-          <mat-card-subtitle> {{nogalcillo.descripcion}} </mat-card-subtitle > 
+          <mat-card-title> {{nogalcillo.descripcionCorta}} </mat-card-title > 
+          <mat-card-subtitle> {{nogalcillo.tipo}} </mat-card-subtitle > 
         </mat-card-header> 
         <img mat-card-image [src]="nogalcillo.imagen"> 
         <mat-card-actions > 
-          <button mat-button (click)="openDialog(nogalcillo)">Abrir cuadro de diálogo</button>
+          <button mat-button class="botonCard" (click)="openDialog(nogalcillo)">Ver Detalles</button>
         </mat-card-actions> 
       </mat-card >
     </div>

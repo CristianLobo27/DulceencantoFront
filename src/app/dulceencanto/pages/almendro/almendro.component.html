@@ -3,12 +3,12 @@
       <mat-card class="example-card"> 
           <mat-card-header> 
             <div mat-card-avatar class="example-header-image"></div> 
-            <mat-card-title> {{almendrito.tipo}} </mat-card-title > 
-            <mat-card-subtitle> {{almendrito.descripcion}} </mat-card-subtitle > 
+            <mat-card-title> {{almendrito.descripcionCorta}} </mat-card-title > 
+            <mat-card-subtitle> {{almendrito.tipo}} </mat-card-subtitle > 
           </mat-card-header> 
           <img mat-card-image class="imagen" [src]="almendrito.imagen"> 
           <mat-card-actions > 
-            <button mat-button (click)="openDialog(almendrito)">Abrir cuadro de diálogo</button>
+            <button mat-button class="botonCard" (click)="openDialog(almendrito)">Ver Detalles</button>
           </mat-card-actions> 
         </mat-card >
       </div>

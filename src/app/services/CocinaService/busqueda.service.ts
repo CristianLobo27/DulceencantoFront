@@ -18,6 +18,7 @@ export class BusquedaService {
 
   buscarTipo(query: string){
     this._historial.unshift(query);
+    
     console.log(this._historial)
   }
 
